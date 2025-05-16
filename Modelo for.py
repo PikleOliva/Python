@@ -10,4 +10,23 @@ lista = [1,45,12,3]
 
 for valor in lista:
     print (valor)
+print("")
 
+# La lista se puede formar automáticamente con 'rango'. 'rango' acepta parámetros de inicio, fin y paso
+# Por ej, rango(10) crea una lista del 0 al 9; rango(3,8) cre una lista que va de 3 a 7; rango(2,8,2) 
+# crea una lista que empieza en 2, sigue en 4 y termina en 6 (porque llegaría solo a 7)
+
+lista= range(5)
+
+for i in lista:
+    print (i)
+print("")
+for i in lista:
+    if i==3:
+        continue
+    print (i)
+print("")
+for i in lista:
+    if i==3:
+        break
+    print(i)

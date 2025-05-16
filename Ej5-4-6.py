@@ -1,21 +1,20 @@
 print("-------------------------------------------------------------")
-print("CALCULAR e^x")
+print("CALCULAR e^x") # Ojo que el cálculo no está bien
 print("-------------------------------------------------------------")
 
-p=1
-q=1
-e=1
-i=1
-x=int(input("Ingresá el valor del exponente: "))
 
-e=e+(p/q)
 
-while p/q >0.000001:
-    p=x**i
-    q=q*i
-    i=i+1
-    e=e+p/q
+a1=1
+a2=0
+an=a1+(2*a2)
+cont=1
 
+while an< 300:
+    a2==a1
+    a1==an
+    an=a1+2*a2
+    cont=cont+1
+    
 print("-------------------------------------------------------------")
-print("El número e elevado a la ",x," es igual a: ",e)
+print("El resultado es ",cont," y el rango es ",an)
 print("-------------------------------------------------------------")
