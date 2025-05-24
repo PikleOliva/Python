@@ -2,25 +2,19 @@ import random, math
 import numpy as np
 
 print("----------------------------------------------------")
-print("SUMAR DOS VECTORES")
+print("CREAR Y LLENAR UNA MATRIZ")
 print("----------------------------------------------------")
 
-# Creamos tres vectores vacíos
+# Creamos una matriz vectores vacía 
 
-Vect_1=[]
-Vect_2=[]
-Vect_Suma=[]
+Mat=[]
 
-# Seleccionamos cuántos registros van a tener los vectores (tienen que ser iguales)
-reg=int(input("Ingresar el número de elementos a introducir: "))
+# Establecemos la dimensión de la matriaz. 
+fila=int(input("Ingresar el número de filas de la matriz: "))
+col=int(input("Ingresar el número de columnas de la matriz: "))
 
-# Llenamos el vector de origen
-for i in range(reg):
-    Vect_1.append(int(input("Ingresar el registro: {0} ".format(i))))
-for i in range(reg):
-    Vect_2.append(int(input("Ingresar el registro: {0} ".format(i))))
-
-    Vect_Suma.append(Vect_1[i]+Vect_2[i])
-    
-# Lo mostramos para ver lo que incorporamos, si hay repetidos y si está sin ordenar
-print(Vect_Suma)
+for i in range(fila):
+    Mat. append([])
+    for j in range(col):
+        Mat[i].append(input("ingresar e valor del elemento: "))   
+        print (Mat)
