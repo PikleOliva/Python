@@ -17,4 +17,4 @@ for i in range(fila):
     Mat. append([])
     for j in range(col):
         Mat[i].append(input("ingresar e valor del elemento: "))   
-        print (Mat)
+print (Mat)
