@@ -16,9 +16,9 @@ reg=int(input("Ingresar el número de elementos a introducir: "))
 
 # Llenamos el vector de origen
 for i in range(reg):
-    Vect_1.append(int(input("Ingresar el registro: {0} ".format(i))))
+    Vect_1.append(int(input("Ingresar el registro {} del vector 1: ".format(i+1))))
 for i in range(reg):
-    Vect_2.append(int(input("Ingresar el registro: {0} ".format(i))))
+    Vect_2.append(int(input("Ingresar el registro {} del vector 2: ".format(i+1))))
 
     Vect_Suma.append(Vect_1[i]+Vect_2[i])
     

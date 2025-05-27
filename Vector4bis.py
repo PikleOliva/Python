@@ -16,5 +16,5 @@ col=int(input("Ingresar el número de columnas de la matriz: "))
 for i in range(fila):
     Mat. append([])
     for j in range(col):
-        Mat[i].append(input("ingresar e valor del elemento: "))   
+        Mat[i].append(int(input("Mat {} {}: ".format(i+1)(j+1))))   
 print (Mat)
