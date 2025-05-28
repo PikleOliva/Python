@@ -13,6 +13,7 @@ ventas=0
 ventastot=0
 maxanual=0
 anual=0
+ventasanual=0
 # Ingresar datos a la matriz
 for i in range(anios):
         Mat.append( [] ) 
@@ -26,14 +27,16 @@ print (Mat) # Para ver cómo quedó la carga de datos
 for i in range(anios):
     for j in range(sucur):
         ventas=ventas + (Mat[i][j])
-    
-# Selección del año con mayor número de ventas
-        if ventas>maxanual:
-            maxanual=ventas
-            anual=i+1
-    print("El año de mayor venta fue el ",anual," con ventas por ",ventas)
+        ventasanual=ventas
     print ("El año ",i+1," las ventas fueron de  ",ventas)
+    ventas=0
+# Selección del año con mayor número de ventas
+if ventasanual>maxanual:
+        maxanual=ventasanual
+        anual=i+1
+print("El año de mayor venta fue el ",anual," con ventas por ",maxanual)
 ventas=0
+
 
 # Vuelvo a cero ventas para empezar otro proceso
 ventas=0  
