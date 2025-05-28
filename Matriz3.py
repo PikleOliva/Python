@@ -11,6 +11,7 @@ sucur = int( input("Ingresar cuántos sucursales se desan analizar: "))
 max=0
 ventas=0
 ventastot=0
+ventasanual=0
     #Ingresar datos al array 
 for i in range(anios):
         Mat.append( [] ) 
@@ -23,6 +24,8 @@ for i in range(sucur):
     for j in range(anios):
         ventas= ventas + Mat[i][j]
         ventastot=ventastot+ventas
+        ventasanual=ventasanual+ventas
+        ventasanual=0
         print ("La sucursal ",i+1," vendió ",ventas," en el año ",j+1)
         if ventas>max:
              max=ventas
