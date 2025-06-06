@@ -20,11 +20,13 @@ print("3 - Llenar un vector con elementos secuenciales (con inicio en 'a' y paso
 print("4 - Llenar un vector con elementos selecionados")
 print("5 - Dado un vector, reemplazar uno de sus registros (por posición)")
 print("6 - Dado un vector, reemplazar uno de sus registros (por valor)")
+print("7 - Dado un vector, eliminar uno de sus registros (por posición)")
 print("8 - Dado un vector, eliminar uno de sus registros (por valor)")
 print("")
 print("-----------------------------------")
-opcion=int(input("Ingresar la opción elegida (0 para salir): "))
+
 while opcion!=0:
+    opcion=int(input("Ingresar la opción elegida (0 para salir): "))
     if opcion ==1:
         print("Llenar un vector con elementos nulos")
         Vector = tamanio * [0]
@@ -32,7 +34,7 @@ while opcion!=0:
 
     elif opcion ==2:
         i=0
-        print("Llenar el vector con elementos ale<torios")
+        print("Llenar el vector con elementos aleatorios")
         for i in range(tamanio): 
             Vector[i]= int(math.trunc(random.random()*100))
         print (Vector)
@@ -64,6 +66,7 @@ while opcion!=0:
             print (Vector)
     elif opcion == 6:
         i=0
+        print("Llenar el vector con elementos aleatorios)")
         for i in range(tamanio): 
             Vector[i]= int(math.trunc(random.random()*100))
         print (Vector)
@@ -77,9 +80,9 @@ while opcion!=0:
 
     elif opcion==7:
         Copia=(tamanio-1)*['']
-        print("Llenar el vector con elementos seleccionados)")
+        print("Llenar el vector con elementos aleatorios)")
         for i in range(tamanio):
-            Vector[i]=int(input("Ingresar el elemento: "))
+            Vector[i]= int(math.trunc(random.random()*100))
         print ("El vector ingresado es ",Vector)
         reg=int(input("¿Qué registro del vector desea eliminar?: "))-1
     
@@ -95,9 +98,9 @@ while opcion!=0:
 
     elif opcion==8:
         Copia=(tamanio-1)*['']
-        print("Llenar el vector con elementos seleccionados)")
+        print("Llenar el vector con elementos aleatorios)")
         for i in range(tamanio):
-            Vector[i]=int(input("Ingresar el elemento: "))
+            Vector[i]= int(math.trunc(random.random()*100))
         print ("El vector ingresado es ",Vector)
         valor=int(input("¿Qué valor del vector desea elimninar?: "))
         if valor in Vector:

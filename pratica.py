@@ -11,13 +11,12 @@ for i in range(largo):
     Vector.append(int(elemento))
 print (Vector)
 
-suma=sum(Vector)
-print (suma)
-prome=suma/largo
-print(prome)
-
-ordenado=Vector.sort()
-print(ordenado)
-
-reducido=Vector.pop()
-print (reducido)
+for i in range(largo):
+    termino=Vector[i]
+    suma=suma+termino
+    contador= contador +1
+    if termino > max:
+        max=termino
+print ("la suma es ",suma)
+print ("La media es {:.2f}".format(suma/contador))
+print("El máximo es ",max)
