@@ -8,7 +8,7 @@ for i in range(largo):
 print ("Vector original: ",Vector)
 nombre=input("Ingresar el nombre del animal buscado: ")
 for i in range(largo):
-    if nombre in Vector:
+    if Vector[i]==nombre:
         if i==0:
             print("A la derecha de ",nombre," está ",Vector[i+1])
         elif i==largo-1:

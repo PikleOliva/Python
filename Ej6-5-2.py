@@ -1,20 +1,20 @@
 print("-------------------------------------------------------")
 print("Complemento2: INVERTIR VECTOR DE CARACTERES.") 
 print("-------------------------------------------------------") #Entradas 
-print("Ingrese dimensión del vector: ")
-n = int( input()) 
-v = n*[''] 
+
+num = int(input("Longitud de la palabra: ")) 
+Vector = num*[''] 
 #Se inicializa un vector con valores por defecto 
-for i in range(n): 
-    v[i] = input("Ingrese Caracter: ") 
+for i in range(num): 
+    Vector[i] = input("Ingrese Caracter: ") 
 #Proceso 
 z = '' 
-d = n 
-for i in range(n//2): 
-    z = v[i] 
-    v[i] = v[d-1] 
-    v[d-1] = z 
+d = num 
+for i in range(num//2): 
+    z = Vector[i] 
+    Vector[i] = Vector[d-1] 
+    Vector[d-1] = z 
     d = d - 1 
     #Salida 
-for i in range(n): 
-        print(v[i])
+for i in range(num): 
+    print(Vector[i],end="  ,  ")

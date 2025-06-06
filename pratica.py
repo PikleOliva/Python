@@ -7,8 +7,8 @@ suma=0
 contador=0
 i=0
 for i in range(largo):
-    elemento=math.trunc(random.random()*100)
-    Vector.append(int(elemento))
+    #elemento=
+    Vector.append(int(math.trunc(random.random()*100)))
 print (Vector)
 
 for i in range(largo):

@@ -9,7 +9,7 @@ print("-------------------------------------------------------------")
 
 num=int(input("Ingreaar un número. (Nro. negativo para salir)"))
 
-while num==0:
+while num!=0:
 
     suma=0
     for i in range(1,num+1):

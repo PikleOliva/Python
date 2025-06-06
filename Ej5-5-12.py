@@ -2,7 +2,7 @@ import random
 from math import *
 
 print("-------------------------------------------------------------")
-print("ECRIBIR LOS RIMEROS 10 NÚMEROS PARES Y SUS CUBOS")
+print("ECRIBIR LOS PRIMEROS 10 NÚMEROS PARES Y SUS CUBOS")
 print("-------------------------------------------------------------")
 
 n=2
